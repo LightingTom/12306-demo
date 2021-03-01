@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PassengerController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="795.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="查询车票">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="145.0" layoutY="48.0" prefHeight="20.0" prefWidth="65.0" text="出发站">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="148.0" layoutY="93.0" text="目的地">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="146.0" layoutY="142.0" text="日    期">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="depart" layoutX="431.0" layoutY="46.0" />
+                        <TextField fx:id="arrive" layoutX="431.0" layoutY="91.0" />
+                        <DatePicker fx:id="dp" layoutX="431.0" layoutY="140.0" prefHeight="30.0" prefWidth="233.0" />
+                        <Button layoutX="145.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleOK" prefHeight="30.0" prefWidth="128.0" text="查询所有" />
+                        <Button layoutX="532.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleOnly" prefHeight="30.0" prefWidth="126.0" text="只看高铁/动车" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="历史订单">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="historyTable" layoutX="23.0" layoutY="26.0" prefHeight="284.0" prefWidth="795.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="UID" prefWidth="62.0" text="车次" />
+                              <TableColumn fx:id="dep" prefWidth="83.0" text="起点站" />
+                              <TableColumn fx:id="arr" prefWidth="73.0" text="终点站" />
+                              <TableColumn fx:id="a_time" prefWidth="130.0" text="到达时间" />
+                              <TableColumn fx:id="d_time" prefWidth="132.0" text="出发时间" />
+                              <TableColumn fx:id="o_time" prefWidth="158.0" text="下单时间" />
+                              <TableColumn fx:id="state" minWidth="0.0" prefWidth="79.0" text="车票状态" />
+                              <TableColumn fx:id="price" minWidth="0.0" prefWidth="77.0" text="票价" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="96.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleDrop" prefHeight="30.0" prefWidth="99.0" text="退票" />
+                        <Button layoutX="542.0" layoutY="305.0" mnemonicParsing="false" onAction="#handlePay" prefHeight="30.0" prefWidth="99.0" text="付款" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="账户设置">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="284.0" layoutY="52.0" mnemonicParsing="false" onAction="#handleChangePass" prefHeight="65.0" prefWidth="151.0" text="修改密码" />
+                        <Button layoutX="284.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="73.0" prefWidth="154.0" text="退出登录" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TicketController">
+   <children>
+      <ImageView fitHeight="559.0" fitWidth="1063.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resource/ticketmodel.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="129.0" layoutY="577.0" mnemonicParsing="false" onAction="#handlePay" prefHeight="48.0" prefWidth="159.0" text="Pay">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Button>
+      <Label layoutX="709.0" layoutY="30.0" prefHeight="42.0" prefWidth="96.0" text="终点站">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="trainID" layoutX="390.0" layoutY="70.0" prefHeight="67.0" prefWidth="140.0" text="Label">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="depart_station" layoutX="129.0" layoutY="70.0" prefHeight="134.0" prefWidth="231.0" text="Label">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="arrive_station" layoutX="650.0" layoutY="85.0" prefHeight="104.0" prefWidth="184.0" text="Label">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="depart_time" layoutX="90.0" layoutY="211.0" prefHeight="57.0" prefWidth="449.0" text="Label">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="seatNum" layoutX="696.0" layoutY="218.0" prefHeight="42.0" prefWidth="122.0" text="Label">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" layoutX="90.0" layoutY="280.0" prefHeight="67.0" prefWidth="149.0" text="Label">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="seat_type" layoutX="665.0" layoutY="290.0" prefHeight="48.0" prefWidth="140.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="598.0" layoutY="577.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="48.0" prefWidth="159.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

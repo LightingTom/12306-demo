@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label prefHeight="51.0" prefWidth="158.0" text="姓   名" GridPane.rowIndex="1">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="密    码" GridPane.rowIndex="2">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="sign" mnemonicParsing="false" onAction="#handleSign" prefHeight="30.0" prefWidth="94.0" text="OK" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin></Button>
+      <Label text="管理员密钥" GridPane.rowIndex="5">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="80.0" />
+         </GridPane.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="30.0" prefWidth="95.0" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin></Button>
+      <Label text="电话号码" GridPane.rowIndex="4">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="90.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="身份证号" GridPane.rowIndex="3">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="90.0" />
+         </GridPane.margin>
+      </Label>
+      <Label prefHeight="51.0" prefWidth="158.0" text="账   号">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="userID" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="userName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="30.0" right="50.0" />
+         </GridPane.margin>
+      </PasswordField>
+      <TextField fx:id="IDCard" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="30.0" right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="PhoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="30.0" right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <PasswordField fx:id="key" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="30.0" right="50.0" />
+         </GridPane.margin>
+      </PasswordField>
+   </children>
+</GridPane>
